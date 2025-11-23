@@ -11,7 +11,7 @@ const client = new Client({
 });
 
 // Your welcome channel ID
-const WELCOME_CHANNEL_ID = "1308146229775040655";
+const WELCOME_CHANNEL_ID = "1442227511659466762";
 
 // ✔ Correct ready event
 client.on("ready", () => {
@@ -53,5 +53,6 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
