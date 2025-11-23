@@ -24,21 +24,21 @@ client.on("guildMemberAdd", async (member) => {
     if (!channel) return;
 
     const welcomeEmbed = new EmbedBuilder()
-        .setTitle(" 💫cosmos gate!")
+        .setTitle(" 💫 cosmosic gate!")
         .setDescription(`A silent watcher of the stars greets all who step into the void.!`)
         .setColor("#00BFFF")
-        .setImage(`https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif`)
+        .setImage("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif")
         .setFooter({ text: "The stars remember your arrival" })
         .setTimestamp();
     
     channel.send({ embeds: [welcomeEmbed] });
     
-    channel.send(`<@${member.id}> how did you find this server? 👀`);
+    channel.send(`<@${member.id}> ARE YOU READY FOR THE FIGHT CHAMP ? 👀`);
 
     try {
         await member.send("Thank you for joining our server! If you need help, feel free to ask 😊");
     } catch (err) {
-        console.log("Could not send DM.");
+        console.log("could not send DM.");
     }
 });
 
@@ -54,6 +54,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
