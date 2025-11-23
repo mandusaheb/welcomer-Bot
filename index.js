@@ -24,12 +24,12 @@ client.on("guildMemberAdd", async (member) => {
     if (!channel) return;
 
     const welcomeEmbed = new EmbedBuilder()
-        .setTitle("🌌 Cosmic Gate!") // Dark-cosmic title
-        .setDescription(`A silent watcher of the stars greets all who step into the void.`) // Dark welcome message
-        .setColor("#0a0a0a") // Deep dark color
-        .setThumbnail(`https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif`) // Optional cosmic image
-        .setFooter({ text: "The stars remember your arrival" }) // Footer text
-        .setTimestamp(); // Adds current timestamp
+        .setTitle("🎉 Welcome to the cosmos!")
+        .setDescription(`A silent watcher of the stars greets all who step into the void.!`)
+        .setColor("#00BFFF")
+        .setImage(`https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif`)
+        .setFooter({ text: "The stars remember your arrival" })
+        .setTimestamp();
     
     channel.send({ embeds: [welcomeEmbed] });
     
@@ -54,6 +54,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
