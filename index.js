@@ -28,14 +28,14 @@ client.on("guildMemberAdd", async (member) => {
 
     const welcomeEmbed = new EmbedBuilder()
         .setTitle("🎉 Welcome to the Server!")
-        .setDescription(Hey <@${member.id}>! We're glad you're here!)
+        .setDescription(`Hey <@${member.id}>! We're glad you're here!`)
         .setColor("#00BFFF")
         .setImage("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG90aDJpcnN1OGFmemsyMzg4eHhvZmgxNHNheWtzNDhlNzh2c3FxMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVWuLuV1JESZJdebkI/giphy.gif")
         .setTimestamp();
 
     channel.send({ embeds: [welcomeEmbed] });
 
-    channel.send(<@${member.id}> how did you find this server? 👀);
+    channel.send(`<@${member.id}> how did you find this server? 👀`);
 
     try {
         await member.send("Thank you for joining our server! If you need help, feel free to ask 😊");
@@ -56,3 +56,4 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
