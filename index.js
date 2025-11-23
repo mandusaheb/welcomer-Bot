@@ -24,8 +24,8 @@ client.on("guildMemberAdd", async (member) => {
     if (!channel) return;
 
     const welcomeEmbed = new EmbedBuilder()
-        .setTitle("🎉 Welcome to the Server!")
-        .setDescription(`Hey <@${member.id}>! We're glad you're here!`)
+        .setTitle("🎉 Welcome to the cosmos!")
+        .setDescription(`Hey <@${member.id}>! We're glad you're here! A silent watcher of the stars, greeting all who step into the void.”)
         .setColor("#00BFFF")
         .setImage("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif")
         .setTimestamp();
@@ -53,6 +53,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
