@@ -1,7 +1,4 @@
 
-
-require("dotenv").config();
-
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
 
 const client = new Client({
@@ -56,4 +53,5 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
