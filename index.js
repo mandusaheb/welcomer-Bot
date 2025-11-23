@@ -18,7 +18,7 @@ const WELCOME_CHANNEL_ID = "1308146229775040655";
 
 // ✔ Correct ready event
 client.on("ready", () => {
-    console.log(Logged in as ${client.user.tag});
+    console.log(`Logged in as ${client.user.tag}`);
 });
 
 // When a new member joins
@@ -54,4 +54,5 @@ client.on("messageCreate", (msg) => {
 });
 
 // Login
+
 client.login(process.env.TOKEN);
