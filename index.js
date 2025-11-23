@@ -27,8 +27,7 @@ client.on("guildMemberAdd", async (member) => {
         .setTitle("🎉 Welcome to the Server!")
         .setDescription(`Hey <@${member.id}>! We're glad you're here!`)
         .setColor("#00BFFF")
-        .setImage("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif
-                  ")
+        .setImage("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBya3NuOG5pZGp1aXh4bTR0a2htcnNxbWpreXIzZjh2djd6enV0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37IzUsLdfChayL5uyA/giphy.gif")
         .setTimestamp();
 
     channel.send({ embeds: [welcomeEmbed] });
@@ -54,6 +53,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
