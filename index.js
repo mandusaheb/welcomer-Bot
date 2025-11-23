@@ -25,7 +25,7 @@ client.on("guildMemberAdd", async (member) => {
 
     const welcomeEmbed = new EmbedBuilder()
         .setTitle("🌌 Cosmic Gate") // Dark-cosmic title
-        .setDescription("A silent watcher of the stars greets all who step into the void.") // Dark welcome message
+        .setDescription(`A silent watcher of the stars greets all who step into the void.`) // Dark welcome message
         .setColor("#0a0a0a") // Deep dark color
         .setThumbnail("https://i.imgur.com/yourCosmicImage.png") // Optional cosmic image
         .setFooter({ text: "The stars remember your arrival" }) // Footer text
@@ -52,6 +52,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
