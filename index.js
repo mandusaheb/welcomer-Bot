@@ -27,7 +27,7 @@ client.on("guildMemberAdd", async (member) => {
         .setTitle("🎉welcome to the cosmos !")
         .setDescription(`A silent watcher of the stars greets all who step into the void.!`)
         .setColor("#d41717")
-        .setImage("https://pin.it/6Exa4oX3Q")
+        .setImage("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXpnMm93ZDdtZ3hmbzcxMGs3cjMxNnJvemltOHRpenp0MG03eHdlMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VFB3cJJne7b5m/giphy.gif")
         .setFooter({ text: "The stars remember your arrival" })
         .setTimestamp();
     
@@ -54,6 +54,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
