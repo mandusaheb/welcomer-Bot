@@ -26,7 +26,7 @@ client.on("guildMemberAdd", async (member) => {
     const welcomeEmbed = new EmbedBuilder()
         .setTitle("🎉welcome to the cosmos !")
         .setDescription(`A silent watcher of the stars greets all who step into the void.!`)
-        .setColor("#00BFFF")
+        .setColor("#d41717")
         .setImage("https://pin.it/6Exa4oX3Q")
         .setFooter({ text: "The stars remember your arrival" })
         .setTimestamp();
@@ -54,6 +54,7 @@ client.on("messageCreate", (msg) => {
 // Login
 
 client.login(process.env.TOKEN);
+
 
 
 
